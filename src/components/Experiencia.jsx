@@ -27,7 +27,7 @@ export const Experiencia = () => {
                     })
                 }
             </div>
-            <div className="col-12 mt-3 mb-2">
+            <div className="col-12 mt-5 mb-2">
                 <h2 className="seccion-title">Experiencia escolar</h2>
             </div>
             <div className="divider mb-2"></div>

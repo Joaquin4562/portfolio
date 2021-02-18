@@ -38,9 +38,9 @@ export const Navbar = () => {
             <nav className={isActive ? "nav-custom active-nav" : "nav-custom"}>
                 <a style={{fontSize:'40px'}} className="tecdevs" href="https://tecdevsmx.com" target="_blank" rel="noreferrer"><strong style={{color: 'white'}}>Tec</strong><span className="dev">Devs/{'>'}</span></a>
                 <ul>
-                    <li><a className="link" onClick={activeNav} href="#presentacion">About</a></li>
-                    <li><a className="link" onClick={activeNav} href="#experiencia">Experience</a></li>
-                    <li><a className="link" onClick={activeNav} href="#contacto">Contact</a></li>
+                    <li><a className="link" onClick={activeNav} href="#presentacion">Acerca de</a></li>
+                    <li><a className="link" onClick={activeNav} href="#experiencia">Experiencia</a></li>
+                    <li><a className="link" onClick={activeNav} href="#contacto">Contacto</a></li>
                 </ul>
                 <p className="aboutTec">Conoce mas sobre TecDevs <a href="https://tecdevsmx.com">Aquí</a></p>
             </nav>
