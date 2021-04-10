@@ -1,6 +1,6 @@
 export const laboralProyects = [
     {
-        nombre: 'COTACYT',
+        nombre: 'COTACYT estatal',
         descripcion: `Plataforma para la evaluación estatal del concurso de ciencia y
         tecnológia en el estado de tamaulipas.`,
         tecnologias: [
@@ -13,7 +13,28 @@ export const laboralProyects = [
             'PHP'
         ],
         github: 'https://github.com/iTzFiliSalsa/Cotacyt',
+        owner: 'iTzFiliSalsa',
+        repoName: 'Cotacyt',
         direccion: 'http://plataforma.cotacyt.gob.mx/sistemaevaluacion/#/',
+        img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/corazit.jpg'
+    },
+    {
+        nombre: 'COTACYT nacional',
+        descripcion: `Plataforma para la evaluación estatal del concurso de ciencia y
+        tecnológia en México.`,
+        tecnologias: [
+            'Angular',
+            'Slim Framework',
+            'MySql',
+            'HTML',
+            'CSS',
+            'TypeScript',
+            'PHP'
+        ],
+        github: 'https://github.com/iTzFiliSalsa/Cotacyt',
+        direccion: 'http://plataforma.cotacyt.gob.mx/sistemaevaluacion/#/',
+        owner: 'iTzFiliSalsa',
+        repoName: 'Cotacyt',
         img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/corazit.jpg'
     },
     {
@@ -31,7 +52,28 @@ export const laboralProyects = [
         ],
         github: 'https://github.com/iTzFiliSalsa/Cotacyt',
         direccion: 'http://plataforma.cotacyt.gob.mx/sistemaevaluacion/#/',
+        owner: 'iTzFiliSalsa',
+        repoName: 'Cotacyt',
         img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/corazit.jpg'
+    },
+    {
+        nombre: 'Cuestionaro salud Dengue 2020',
+        descripcion: `Cuestionaro para evaluar el conocimiento acerca del dengue en los centros
+        de salud.`,
+        tecnologias: [
+            'Angular',
+            'Slim Framework',
+            'MySql',
+            'HTML',
+            'CSS',
+            'TypeScript',
+            'PHP'
+        ],
+        github: 'https://github.com/Joaquin4562/cuestionario-centro-de-salud',
+        direccion: 'http://centro.de.salud.mante.hosting.acm.org/#/login',
+        owner: 'Joaquin4562',
+        repoName: 'cuestionario-centro-de-salud',
+        img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/salud.png'
     }
 ];
 
@@ -47,11 +89,15 @@ export const shoolProyects = [
             'HTML',
             'CSS',
             'TypeScript',
-            'JavaScript'
+            'JavaScript',
+            'Angular Material',
+            'Bootstrap'
         ],
-        github: 'https://github.com/iTzFiliSalsa/Cotacyt',
-        direccion: 'http://plataforma.cotacyt.gob.mx/sistemaevaluacion/#/',
-        img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/corazit.jpg'
+        github: 'https://github.com/TECINS/bugoff',
+        direccion: 'http://bugoff.tecdevsmx.com/',
+        owner: 'TECINS',
+        repoName: 'bugoff',
+        img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/bugoff.png'
     },
     {
         nombre: 'Kabum',
@@ -65,9 +111,11 @@ export const shoolProyects = [
             'CSS',
             'JavaScript',
         ],
-        github: 'https://github.com/iTzFiliSalsa/Cotacyt',
-        direccion: 'http://plataforma.cotacyt.gob.mx/sistemaevaluacion/#/',
-        img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/corazit.jpg'
+        github: 'https://github.com/DevelopSanchtz/Kabum',
+        direccion: 'http://kabum.tecdevsmx.com/#/login',
+        owner: 'DevelopSanchtz',
+        repoName: 'Kabum',
+        img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/kabum.png'
     },
     {
         nombre: 'FindMyTecky',
@@ -81,8 +129,10 @@ export const shoolProyects = [
             'Firebase',
             'MySql',
         ],
-        github: 'https://github.com/iTzFiliSalsa/Cotacyt',
+        github: 'https://github.com/Joaquin4562/FindMyTecky-v2',
         direccion: 'http://plataforma.cotacyt.gob.mx/sistemaevaluacion/#/',
+        owner: 'Joaquin4562',
+        repoName: 'FindMyTecky-v2',
         img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/findmytecky.jpg'
     },
 ];

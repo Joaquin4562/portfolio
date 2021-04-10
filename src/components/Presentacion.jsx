@@ -10,7 +10,7 @@ export const Presentacion = () => {
                         <div className="row h-100 justify-content-center align-items-center">
                             <div className="col-12 col-md-6">
                                 <h2 className="title">Hola, me llamo Joaquin y soy <strong data-aos="fade-up" className="decoration">FullStack</strong> developer</h2>
-                                <p className="mt-3 description">Soy un programador Jr enfocado en el desarrollo web y mobile.</p>
+                                <p className="mt-3 description">Soy un programador Jr enfocado en el desarrollo web y móvil.</p>
                                 <div className="row justify-content-center">
                                     <div className="col-2">
                                         <a className="icon-social" href="https://github.com/joaquin4562" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon-s"  icon={['fab', 'github']} size="2x"/> </a>
@@ -24,13 +24,27 @@ export const Presentacion = () => {
                                     <div className="col-2">
                                         <a className="icon-social" href="https://www.linkedin.com/in/gerardo-joaquin-martinez-hernandez-65aa361b2/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon-s" icon={['fab', 'linkedin']} size="2x"/> </a>
                                     </div>
+                                    <div className="col-12 mt-4">
+                                        <div className="row justify-content-center">
+                                            <div className="col-6">
+                                                <a href="#experiencia" className="btn btn-send">Ve mi experiencia</a>
+                                            </div>
+                                            <div className="col-6">
+                                                <a href="#contacto" className="btn btn-send">¿Deseas contactarme?</a>
+                                            </div>
+                                        </div>
+                                        <div className="col-12 mt-3">
+                                                <a href="https://drive.google.com/file/d/1rXaSyTUtQCUkcUIGC-OkkmfkEmId-Y5f/view?usp=sharing" 
+                                                    className="btn btn-send" target="_blank" rel="noreferrer">Descarga mi CV</a>
+                                            </div>
+                                    </div>
                                 </div>
                             </div>
                             <div className="col-8 col-md-4">
                                 <img data-aos="fade-up" src={me} alt="imagen mia" className="img-fluid avatar"/>
                             </div>
                             <div className="col-12">
-                                <p className="text-right description comillas">El cansancio es temporal, la satisfacción para siempre</p>
+                                <p className="text-right description comillas writer">El poder mas grande es el conocimiento</p>
                             </div>
                         </div>
                     </section>

@@ -22,6 +22,8 @@ export const Experiencia = () => {
                                 direccion={value.direccion}
                                 tecnologias={value.tecnologias}
                                 img={value.img}
+                                owner={value.owner}
+                                repoName={value.repoName}
                             />
                         )
                     })
@@ -43,6 +45,8 @@ export const Experiencia = () => {
                                 direccion={value.direccion}
                                 tecnologias={value.tecnologias}
                                 img={value.img}
+                                owner={value.owner}
+                                repoName={value.repoName}
                             />
                         )
                     })

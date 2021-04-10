@@ -65,14 +65,17 @@ body, html, #root {
     font-family: 'Roboto Mono';
 }
 .img-proyect {
-    border-radius: .8rem;
+    border-radius: .4rem;
     transition: all 0.3s ease;
 }
 .img-proyect:hover {
     transform: scale(1.02);
 }
 .icon-link {
-    font-size: 25px;
+    font-size: 27px;
+    :hover {
+        color: #0057f8;
+    }
 }
 .divider {
     width: 50%;
@@ -85,7 +88,7 @@ body, html, #root {
     margin-right: 5px;
     padding: 10px;
     border-radius: 5px;
-    box-shadow:  -20px -20px 40px #d9d9d9, 
+    box-shadow:  -20px -20px 60px #d9d9d9, 
                 20px 20px 60px #ffffff;
 }
 
@@ -173,7 +176,7 @@ body, html, #root {
     width: 100%;
     z-index: 2;
     padding: 90px 50px 30px;
-	background: #0f1011;
+	background: #0f1011f1;
 	opacity: 0;
 	transition: all 0.75s ease;
 	font-size: 1.2em;
@@ -238,7 +241,10 @@ body, html, #root {
     &:hover {
         background: #ffffff;
         color: #0e0f11;
-        border: solid 1px #0e0f11;
+        box-shadow: 5px 5px 10px rgb(163, 161, 161), -5px -5px 15px rgb(240, 239, 239);
+    }
+    &:focus {
+        box-shadow: 4px 4px 4px rgb(113, 113, 236);
     }
 }
 .form-group {
@@ -306,4 +312,54 @@ body, html, #root {
         transform: scaleY(1.0);
         -webkit-transform: scaleY(1.0);
     }
+}
+
+.img-git {
+    border-radius: 100em;
+}
+
+.badge-info-custom {
+    font-size: 20px;
+    background-color: #e2e9f5;
+    border-radius: 100px;
+}
+.back {
+    border-radius: 10rem;
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 3px 1px rgb(91, 163, 197);
+    transition: all ease-in-out 700ms;
+    > img {
+        transition: all ease 700ms;
+        width: 60px;
+        height: 60px;
+        object-fit: contain;
+    }
+}
+.back:hover {
+    box-shadow: none;
+    transform: rotate(360deg);
+}
+
+.writer {
+    letter-spacing: .10rem;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.up{
+    position: fixed;
+    bottom: 0; 
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 50px;
+    border-radius: 10rem;
+    height: 60px;
+    width: 60px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
 }

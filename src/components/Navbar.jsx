@@ -20,9 +20,6 @@ export const Navbar = () => {
     }
     return (
         <>
-            <div className="header d-none d-md-block">
-                <a style={{fontSize:'40px'}} className="tecdevs" href="https://tecdevsmx.com" target="_blank" rel="noreferrer"><strong style={{color: 'black'}}>Tec</strong><span className="dev">Devs/{'>'}</span></a>
-            </div>
             <div onClick={activeNav} className={isActive ? "navigator active-btn d-none d-md-flex" : isStiky ? "navigator d-none d-md-flex top" : "navigator d-none d-md-flex"}>
                 <div className="bar-1"></div>
                 <div className="bar-2"></div>
@@ -38,7 +35,7 @@ export const Navbar = () => {
             <nav className={isActive ? "nav-custom active-nav" : "nav-custom"}>
                 <a style={{fontSize:'40px'}} className="tecdevs" href="https://tecdevsmx.com" target="_blank" rel="noreferrer"><strong style={{color: 'white'}}>Tec</strong><span className="dev">Devs/{'>'}</span></a>
                 <ul>
-                    <li><a className="link" onClick={activeNav} href="#presentacion">Acerca de</a></li>
+                    <li><a className="link" onClick={activeNav} href="#presentacion">Presentación</a></li>
                     <li><a className="link" onClick={activeNav} href="#experiencia">Experiencia</a></li>
                     <li><a className="link" onClick={activeNav} href="#contacto">Contacto</a></li>
                 </ul>

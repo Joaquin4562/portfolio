@@ -35,7 +35,7 @@ export const Contacto = () => {
             <div className="col-12 mt-2">
                 <h1 className="section-title">Contacto</h1>
                 <div className="divider mb-2"></div>
-                <form onSubmit={handleSubmit(submitEmail)} className="row justify-content-center">
+                <form onSubmit={handleSubmit(submitEmail)} className="row justify-content-center mt-4">
                     <div className="col-12 col-md-8">
                         <div className="row">
                             <div className="col-6 form-group">
