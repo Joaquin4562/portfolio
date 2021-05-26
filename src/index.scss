@@ -1,6 +1,10 @@
 * {
     color: #21232A;
 }
+@font-face {
+    font-family: 'RobotoMono';
+    src: url('./assets/fonts/RobotoMono.ttf');
+}
 .avatar {
     border-radius: 100em;
 }
@@ -8,7 +12,7 @@
 .description {
     font-size: 19px;
     font-weight: 400;
-    font-family: 'Roboto Mono';
+    font-family: 'RobotoMono';
 }
 .comillas::after {
     content: '”';
@@ -22,7 +26,7 @@
 }
 .title {
     font-weight: 400;
-    font-family: 'Roboto Mono';
+    font-family: 'RobotoMono';
 }
 body, html, #root {
     scroll-behavior: smooth;
@@ -87,6 +91,7 @@ body, html, #root {
     margin-left: 1px;
     margin-right: 5px;
     padding: 10px;
+    z-index: 10;
     border-radius: 5px;
     box-shadow:  -20px -20px 60px #d9d9d9, 
                 20px 20px 60px #ffffff;
@@ -107,6 +112,7 @@ body, html, #root {
     align-items: center;
     cursor: pointer;
     transition: all ease 0.3s;
+    margin-left: 15px;
     &:hover {
         & > .bar-1, .bar-2, .bar-3 {
             box-shadow: 1px 1px 1px #333;
@@ -134,6 +140,9 @@ body, html, #root {
 .icon-menu path {
     color: #d9d9d9;
     transition: all ease 0.3s;
+}
+.icon-social .icon-s path {
+    transition: all 0.3s ease;
 }
 .icon-social {
     &:hover {
@@ -362,4 +371,62 @@ body, html, #root {
     align-items: center;
     box-shadow: 2px 2px 2px black;
     cursor: pointer;
+}
+
+.social {
+    position: fixed;
+    background: #333;
+    height: 200px;
+    width: 60px;
+    top: 40vh;
+    right: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 1rem 0rem 0rem 1rem;
+}
+.icon-social-fixed .icon-s-fixed path{
+    color: white;
+    transition: all 0.3s ease;
+}
+.icon-social-fixed {
+    &:hover {
+        & > .icon-s-fixed path {
+            color: #0057f8;
+            transform: translateX(-40px);
+        }
+    }
+}
+.icon-social-card .icon-s-card path{
+    color: #0e0f11;
+    transition: all 0.3s ease;
+    transform: scale(1.8);
+}
+.icon-social-card {
+    &:hover {
+        & > .icon-s-card path {
+            color: #0057f8;
+        }
+    }
+}
+.background {
+    position: relative;
+    .form{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        border-radius: 0rem 0rem 100rem 100rem;
+        height: 80%;
+        background: #f4f1fa;
+        animation: changeBackground 4s infinite alternate;
+    }
+}
+@keyframes changeBackground {
+    0% {background: #f1faf2}
+    25% {background: #f9faf1}
+    50% {background: #f6faf1}
+    75% {background: #faf1f8}
+    100% {background: #f2f1fa}
 }

@@ -14,7 +14,7 @@ export const Navbar = () => {
     }
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
-    })
+    }, [])
     const activeNav = () => {
         setIsActive(!isActive);
     }

@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { faLink } from '@fortawesome/free-solid-svg-icons'
+import { faGithubAlt} from '@fortawesome/free-brands-svg-icons'
+import { faCodeBranch} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import axios from 'axios';
 
 export const CardExp = ({nombre, descripcion, tecnologias, github, direccion, img, owner, repoName}) => {
     const URL = 'https://api.github.com/repos/';
-    const accesToken = 'f93448659c8a4d30d1c5286f533757b01853af17';
+    const accesToken = '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';
     const [colaboradores, setColaboradores] = useState([]);
     useEffect(() => {
         axios.get(`${URL}${owner}/${repoName}/collaborators?access_token=${accesToken}`)
@@ -23,16 +24,16 @@ export const CardExp = ({nombre, descripcion, tecnologias, github, direccion, im
                                 <span className="title-proyect">{nombre}</span>
                             </div>
                             <div className="col-2">
-                                <a className="icon-social"
+                                <a className="icon-social-card"
                                     href={direccion}
                                     target="_blank" rel="noreferrer"> 
-                                    <FontAwesomeIcon className="mr-2 icono-s" size='lg' icon={faLink} />
+                                    <FontAwesomeIcon className="mr-4 mb-2 icon-s-card" icon={faCodeBranch} />
                                 </a>
-                                <a className="icon-social"
+                                <a className="icon-social-card"
                                     href={github}
                                     target="_blank" 
                                     rel="noreferrer">
-                                        <FontAwesomeIcon className='icon-s' size='lg' icon={['fab', 'github']} />
+                                        <FontAwesomeIcon className='icon-s-card' icon={faGithubAlt} />
                                 </a>
                             </div>
                         </div>

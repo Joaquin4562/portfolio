@@ -22,7 +22,7 @@ export const Presentacion = () => {
                                         <a className="icon-social" href="https://www.instagram.com/gerardojoaquin_/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon-s"  icon={['fab', 'instagram']} size="2x"/> </a>
                                     </div>
                                     <div className="col-2">
-                                        <a className="icon-social" href="https://www.linkedin.com/in/gerardo-joaquin-martinez-hernandez-65aa361b2/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon-s" icon={['fab', 'linkedin']} size="2x"/> </a>
+                                        <a className="icon-social" href="https://www.linkedin.com/in/g-joaquin-mtz-hdz/" target="_blank" rel="noreferrer"><FontAwesomeIcon className="icon-s" icon={['fab', 'linkedin']} size="2x"/> </a>
                                     </div>
                                     <div className="col-12 mt-4">
                                         <div className="row justify-content-center">
@@ -34,13 +34,13 @@ export const Presentacion = () => {
                                             </div>
                                         </div>
                                         <div className="col-12 mt-3">
-                                                <a href="https://drive.google.com/file/d/1rXaSyTUtQCUkcUIGC-OkkmfkEmId-Y5f/view?usp=sharing" 
-                                                    className="btn btn-send" target="_blank" rel="noreferrer">Descarga mi CV</a>
+                                                <a href="https://drive.google.com/file/d/1P3c4_OgCtFo9DJ0_3RCrraFQ7dC7OEsy/view?usp=sharing" 
+                                                    className="btn btn-send" target="_blank" rel="noreferrer">Ve mi CV</a>
                                             </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-8 col-md-4">
+                            <div className="col-8 col-md-4 d-none d-md-block">
                                 <img data-aos="fade-up" src={me} alt="imagen mia" className="img-fluid avatar"/>
                             </div>
                             <div className="col-12">
