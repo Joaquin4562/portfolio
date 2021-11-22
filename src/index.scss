@@ -1,18 +1,17 @@
 * {
     color: #21232A;
 }
-@font-face {
-    font-family: 'RobotoMono';
-    src: url('./assets/fonts/RobotoMono.ttf');
-}
 .avatar {
     border-radius: 100em;
 }
-
+.private {
+    font-style: italic;
+    font-weight: bold;
+    color: #595b61;
+}
 .description {
     font-size: 19px;
     font-weight: 400;
-    font-family: 'RobotoMono';
 }
 .comillas::after {
     content: '”';
@@ -25,12 +24,12 @@
     font-size: 25px;
 }
 .title {
-    font-weight: 400;
-    font-family: 'RobotoMono';
+    font-size: 40px;
 }
 body, html, #root {
     scroll-behavior: smooth;
     height: 100%;
+    padding: 10px;
 }
 #contacto {
     background-color: #ffffff;
@@ -54,19 +53,16 @@ body, html, #root {
     color: #595b61;
     font-weight: bold;
     font-size: 30px;
-    font-family: 'Roboto Mono';
 }
 .sub-title {
     color: #595b61;
     font-weight: bold;
     font-size: 20px;
-    font-family: 'Roboto Mono';
 }
 .seccion-title {
     color: #0e0f11;
     font-weight: bold;
     font-size: 37px;
-    font-family: 'Roboto Mono';
 }
 .img-proyect {
     border-radius: .4rem;
@@ -231,7 +227,6 @@ body, html, #root {
 }
 .aboutTec {
     font-size: 20px;
-    font-family: 'Roboto Mono';
     position: absolute;
     color: #d9d9d9;
     left: 100px;

@@ -2,17 +2,21 @@ import React, { useEffect, useState } from 'react'
 import { faGithubAlt} from '@fortawesome/free-brands-svg-icons'
 import { faCodeBranch} from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import axios from 'axios';
 
 export const CardExp = ({nombre, descripcion, tecnologias, github, direccion, img, owner, repoName}) => {
+    const {REACT_APP_GHAT} = process.env;
     const URL = 'https://api.github.com/repos/';
-    const accesToken = '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';
+    const accesToken = REACT_APP_GHAT;
     const [colaboradores, setColaboradores] = useState([]);
     useEffect(() => {
-        axios.get(`${URL}${owner}/${repoName}/collaborators?access_token=${accesToken}`)
-        .then(response => {
-            setColaboradores(response.data);
-    })
+        if (github !== 'private')
+        axios.get(`${URL}${owner}/${repoName}/collaborators`, {
+            headers: {
+                'Authorization': `token ${accesToken}`
+            }
+        }).then(response => setColaboradores(response.data))
     },[owner, repoName]);
     return (
         <div className="row card-custom mt-4 mb-4" data-aos="fade-up">
@@ -23,19 +27,27 @@ export const CardExp = ({nombre, descripcion, tecnologias, github, direccion, im
                             <div className="col-10">
                                 <span className="title-proyect">{nombre}</span>
                             </div>
-                            <div className="col-2">
-                                <a className="icon-social-card"
-                                    href={direccion}
-                                    target="_blank" rel="noreferrer"> 
-                                    <FontAwesomeIcon className="mr-4 mb-2 icon-s-card" icon={faCodeBranch} />
-                                </a>
-                                <a className="icon-social-card"
-                                    href={github}
-                                    target="_blank" 
-                                    rel="noreferrer">
-                                        <FontAwesomeIcon className='icon-s-card' icon={faGithubAlt} />
-                                </a>
-                            </div>
+                            {
+                                github !== 'private' 
+                                ?   <div className="col-2">
+                                        <a className="icon-social-card"
+                                            href={direccion}
+                                            target="_blank" rel="noreferrer"> 
+                                            <FontAwesomeIcon className="mr-4 mb-2 icon-s-card" icon={faCodeBranch} />
+                                        </a>
+                                        <a className="icon-social-card"
+                                            href={github}
+                                            target="_blank" 
+                                            rel="noreferrer">
+                                                <FontAwesomeIcon className='icon-s-card' icon={faGithubAlt} />
+                                        </a>
+                                    </div>
+                                : <div className="col-2">
+                                    <div className="private">
+                                        Privado
+                                    </div>
+                                </div>
+                            }
                         </div>
                     </div>
                     <div className="col-12 mt-2">

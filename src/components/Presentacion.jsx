@@ -34,7 +34,7 @@ export const Presentacion = () => {
                                             </div>
                                         </div>
                                         <div className="col-12 mt-3">
-                                                <a href="https://drive.google.com/file/d/1P3c4_OgCtFo9DJ0_3RCrraFQ7dC7OEsy/view?usp=sharing" 
+                                                <a href="https://drive.google.com/file/d/1NXEC6iS_hSsEfHFpRei98RfpGNHvvgg5/view?usp=sharing" 
                                                     className="btn btn-send" target="_blank" rel="noreferrer">Ve mi CV</a>
                                             </div>
                                     </div>

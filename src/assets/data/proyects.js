@@ -1,16 +1,35 @@
 export const laboralProyects = [
     {
+        nombre: 'Sistema de evaluación docente',
+        descripcion: `Plataforma web para que los alumnos realicen la evaluación docente
+        correspondiente a periodo escoclar.`,
+        tecnologias: [
+            'Angular',
+            'Express',
+            'MySql',
+            'HTML',
+            'CSS',
+            'TypeScript',
+            'NodeJS'
+        ],
+        github: 'private',
+        owner: 'private',
+        repoName: 'private',
+        direccion: 'https://sed.mante.hosting.acm.org/',
+        img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/sed.png'
+    },
+    {
         nombre: 'COTACYT estatal',
         descripcion: `Plataforma para la evaluación estatal del concurso de ciencia y
         tecnológia en el estado de tamaulipas.`,
         tecnologias: [
             'Angular',
-            'Slim Framework',
+            'Express',
             'MySql',
             'HTML',
             'CSS',
             'TypeScript',
-            'PHP'
+            'NodeJs'
         ],
         github: 'https://github.com/iTzFiliSalsa/Cotacyt',
         owner: 'iTzFiliSalsa',
@@ -24,12 +43,12 @@ export const laboralProyects = [
         tecnológia en México.`,
         tecnologias: [
             'Angular',
-            'Slim Framework',
+            'NodeJS',
             'MySql',
             'HTML',
             'CSS',
             'TypeScript',
-            'PHP'
+            'Express'
         ],
         github: 'https://github.com/iTzFiliSalsa/Cotacyt',
         direccion: 'http://plataforma.cotacyt.gob.mx/sistemaevaluacion/#/',
@@ -43,12 +62,12 @@ export const laboralProyects = [
         investigadores "El Gran Premio 2020".`,
         tecnologias: [
             'Angular',
-            'Slim Framework',
+            'NodeJS',
             'MySql',
             'HTML',
             'CSS',
             'TypeScript',
-            'PHP'
+            'Express'
         ],
         github: 'https://github.com/iTzFiliSalsa/Cotacyt',
         direccion: 'http://plataforma.cotacyt.gob.mx/sistemaevaluacion/#/',
@@ -79,6 +98,24 @@ export const laboralProyects = [
 
 export const shoolProyects = [
     {
+        nombre: 'Habits app',
+        descripcion: `Aplicación móvil para la motivación personal de ser constante con habitos
+        del día a día.`,
+        tecnologias: [
+            'Flutter',
+            'Nodejs',
+            'Firebase',
+            'Firebase Auth',
+            'Firebase Firestore',
+            'Firebase Cloud Messagging'
+        ],
+        github: 'https://github.com/Joaquin4562/habits-app',
+        direccion: '',
+        owner: 'Joaquin4562',
+        repoName: 'habits-app',
+        img: 'https://tecdevsmx.com/uploads_joaquin_NOBORRAR/habits.png'
+    },
+    {
         nombre: 'BugOff',
         descripcion: `Web App para el control de errores en proyectos de desarrollo,
         organización interna de proyectos y testeo.`,
@@ -88,6 +125,7 @@ export const shoolProyects = [
             'MySql',
             'HTML',
             'CSS',
+            'Express',
             'TypeScript',
             'JavaScript',
             'Angular Material',
@@ -128,6 +166,8 @@ export const shoolProyects = [
             'Google maps API',
             'Firebase',
             'MySql',
+            'NodeJS',
+            'Express'
         ],
         github: 'https://github.com/Joaquin4562/FindMyTecky-v2',
         direccion: 'http://plataforma.cotacyt.gob.mx/sistemaevaluacion/#/',
